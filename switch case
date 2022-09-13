@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int a=2,b=3,choice,c;
+	cout<<"provide your choice:";
+	cin>>choice;
+	switch(choice){
+		case 1:
+			c=a+b;
+			cout<<"add="<<c;
+			break;
+		case 2:
+			c=a-b;
+			cout<<"sub="<<c;
+			break;
+		case 3:
+			c=a*b;
+			cout<<"mul="<<c;
+			break;
+		case 4:
+			c=a/b;
+			cout<<"div="<<c;
+			break;
+		default:
+			cout<<"enter valid number";
+			break;
+	}return 0;
+}
