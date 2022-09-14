@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class addamount{
+	char *name;
+	int amt,b;
+	public:
+		addamount();
+		addamount(int);
+		void display();
+};
+addamount::addamount(){
+	amt=50;
+}
+addamount::addamount(int x){
+	amt=x;
+}
+void addamount::display(){
+	b=50;
+	cout<<"the amount is:"<<amt+b;
+	
+}
+int main(){
+	addamount a;
+	addamount a1(300);
+	a1.display();
+	return 0;
+}
