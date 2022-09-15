@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class employe
+{
+	int id=192111381,no=998978;
+	char*a="VINAY";
+	public:
+		void getdata()
+		{
+			cout<<"enter the id "<<id<<endl;
+			cout<<"enter the no "<<no<<endl;
+			cout<<"enter the name "<<a<<endl;
+		}
+};
+class EMP:public employe
+{
+	int salary=50000,dec=5000,m=salary-dec;
+	float b=salary*95/100,h=salary*10/100,p=salary*15/100,g=b+h+p+salary;
+	public:
+		void getdata1()
+		{
+			cout<<"enter the basic salary "<<salary<<endl;
+			cout<<"enter the emp gross salary "<<g<<endl;
+			cout<<"the dedection is "<<m<<endl;
+			cout<<"net salary "<<g-m;
+		}
+};
+int main()
+{
+	EMP emp;
+	emp.getdata();
+	emp.getdata1();
+}
