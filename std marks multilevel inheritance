@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class student{
+	public:
+		void getdata(){
+		
+		int rollno;
+		cout<<"enter the roll no:";
+		cin>>rollno;}
+};
+class test:public student{
+	public:
+		void getdata1(){
+			int m1,m2;
+			cout<<"enter the subject marks m1:";
+			cin>>m1;
+			cout<<"enter the subject marks m2:";
+			cin>>m2;
+		}
+};
+class result:public test{
+	public:
+		void getdata2(){
+			int res,m1,m2;
+			res=m1+m2;
+			cout<<"marks obtained of two subjects are:"<<res<<endl;
+		}
+};
+int main(){
+	result stu;
+	stu.getdata();
+	stu.getdata1();
+	stu.getdata2();
+	return 0;
+}
